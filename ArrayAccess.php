@@ -72,36 +72,36 @@ class Container implements \ArrayAccess
 	protected $data = array();
 
 	public function offsetExists ($offset)
-    {	
+    	{	
 		return isset($this->data[$offset]);
-    }
+    	}
 	
 	public function offsetSet ($offset, $value)
-    {
+    	{
 		if (is_null($offset))
 		{
-            $this->data[] = $value;
-        } 
+            		$this->data[] = $value;
+        	} 
 		else 
 		{
-            $this->data[$offset] = $value;
-        }       	
-    }
+            		$this->data[$offset] = $value;
+        	}       	
+    	}
 
-    public function &offsetGet ($offset)
-    {
+    	public function &offsetGet ($offset)
+    	{
 		if (!isset($this->data[$offset]))
 		{
 			throw new Exception(sprintf('Key "%s" is not defined.', $offset));
 		}
 		$this->data[$offset] = is_callable($this->data[$offset])? $this->data[$offset]($this): $this->data[$offset];   		
 		return $this->data[$offset]; 
-    }
+    	}
 
-    public function offsetUnset ($offset)
-    {
+    	public function offsetUnset ($offset)
+    	{
 		unset($this->data[$offset]);
-    }
+    	}
 }
 
 $c = new Container();
