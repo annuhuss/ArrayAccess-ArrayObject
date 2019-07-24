@@ -1,5 +1,5 @@
 <h1>
-PHPs predefined ArrayAccess interface and ArrayObject class: Make an object that acts as arrays, really!
+PHPs predefined ArrayAccess interface and ArrayObject class: How objects acts like arrays
 </h1>
 
 <p>
