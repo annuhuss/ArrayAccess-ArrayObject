@@ -19,7 +19,7 @@ OK, let's now talk about how to introduce the above features through our example
 </p>
 
 <p>
-Firstly, we will take an example whereby we intentionally produce some errors or notices for using PHPs <i><strong>unset()</i></strong> and <i><strong>shuffle()</strong></i> functions. Secondly, we will show how to mitigate the problems by implementing <i>ArrayAccess<i> interface by the Container class. In the final example, by extending <i>ArrayObject</i> class by the Container class, we will create objects that perform like arrays.
+Firstly, we will take an example whereby we intentionally produce some errors or notices for using PHPs <i><strong>unset()</i></strong> and <i><strong>shuffle()</strong></i> functions. Secondly, we will show how to mitigate the problems by implementing <i>ArrayAccess</i> interface by the Container class. In the final example, by extending <i>ArrayObject</i> class by the Container class, we will create objects that perform like arrays.
 </p>
 
 <p>
