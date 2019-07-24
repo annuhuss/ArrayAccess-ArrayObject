@@ -70,20 +70,20 @@ class Container extends \ArrayObject
 	protected $data=array();
 
 	public function offsetExists ($offset)
-    {	
+    	{	
 		return isset($this->data[$offset]);
-    }
+    	}
 
 	function offsetSet($offset, $value)
 	{
 		if (is_null($offset))
 		{
-            $this->data[] = $value;
-        } 
+            		$this->data[] = $value;
+        	} 
 		else 
 		{
-            $this->data[$offset] = $value;
-        } 
+            		$this->data[$offset] = $value;
+        	} 
 	}
 
 	function &offsetGet($offset) 
