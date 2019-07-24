@@ -1,5 +1,5 @@
 <h1>
-Utilizing the features of PHPs predefined ArrayAccess interface and ArrayObject class by a container
+PHPs predefined ArrayAccess interface and ArrayObject class: Make an object that acts as arrays, really!
 </h1>
 
 <p>
